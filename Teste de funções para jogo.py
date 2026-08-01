@@ -12,6 +12,7 @@ def modify_list(position,player):
         matriz[position - 1] = o
         return matriz
 
+
 # Função que determina qual jogador atual.
 def player_corrent(turn):
     if turn // 2 == 0:
@@ -19,19 +20,20 @@ def player_corrent(turn):
     else:
         return 1
 
+
 # Função que solicita e valida a entrada de uma posição escolhida pelo usuário.
-def get_position_played(turn):
+def get_position_played(teste):
     get_position = int(input('Escolha uma posição: '))
     return get_position
 
 
 def main():
 
-    get_position_played(1)
+    valor = 3
+    get_position_played(valor)
     # modify_list(input_position,player)
     # print(modify_list(input_position,p
     # print(modify_list(3,1))
-
 
 
 if __name__ == "__main__":
